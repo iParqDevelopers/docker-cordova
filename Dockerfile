@@ -2,8 +2,8 @@ FROM beevelop/android-nodejs
 
 ENV CORDOVA_VERSION 10.0.0
 
-WORKDIR "/tmp"
+WORKDIR "/app"
 
 RUN npm i -g --unsafe-perm cordova@${CORDOVA_VERSION} && \
-    cd /tmp && \
+    cd /app && \
     cordova -v
